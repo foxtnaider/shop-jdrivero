@@ -1,0 +1,88 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* global */
+a{
+    transition: all 0.3s ease-in-out;
+}
+li{
+    transition: all 0.3s ease-in-out;  
+}
+
+/* clases para menu mobile responsive */
+#responsive-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    max-width: 250px;
+    width: 0%;
+    overflow: hidden;
+    z-index: 10;
+    padding-top: 60px;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+#responsive-nav.active {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    width: 100%;
+}
+
+/* single product */
+.single-product:hover .product-img .p_icon {
+    bottom: 0px;
+}
+.single-product .product-img .p_icon {
+    width: 90%;
+    padding: 10px 30px;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: rgba(205, 119, 20, 0.527);
+    transition: all 400ms ease;
+}
+
+/* gradiente para new y offert */
+.newoffer {
+    background: linear-gradient(-45deg,#f90000,#b11e1ed3,#fbd1c4,#ff0202);
+    background-size: auto;
+    background-size: 400% 400%;
+    animation: gradient 2s cubic-bezier(.12,.72,.25,1) infinite;
+
+    border: none !important;
+    color: #ffffff !important;
+}
+.newsale {
+    background: linear-gradient(-45deg,#00f900,#59b11ed3,#c4fbcd,#3dff02);
+    background-size: auto;
+    background-size: 400% 400%;
+    animation: gradient 2s cubic-bezier(.12,.72,.25,1) infinite;
+
+    border: none !important;
+    color: #ffffff !important;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

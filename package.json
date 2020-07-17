@@ -1,0 +1,14 @@
+{
+  "name": "shop-jdrivero",
+  "version": "0.0.1",
+  "description": "Template html de tienda virtual JD Rivero Global",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Rivero Visual Group C.A.",
+  "license": "Copyright",
+  "devDependencies": {
+    "tailwindcss": "^1.4.6"
+  }
+}
