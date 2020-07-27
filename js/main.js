@@ -105,5 +105,17 @@ function filter(text) {
     // console.log(input)
 }
 
+// slider categories
+function slider(event, id){
+    event.preventDefault()
+
+    const slider = document.querySelector('.slider')
+    let list = slider.children //obtengo los li internos
+    for (let i = 0; i < list.length; i++) {
+        const element = list[i]; //obtengo individual cada li para manupularlo
+        // si el li es igual al li seleccionado de agrego la clase opacitys en caso contrario lo remuevo
+        element.id === id ? element.classList.add('opacitys') : element.classList.remove('opacitys') 
+    }
+}
 
 // console.log(nav)
