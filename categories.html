@@ -1,1 +1,359 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - JD Rivero </title>
+    <link rel="stylesheet" href="css/app.css">
+    <!-- <script src="https://kit.fontawesome.com/bfc59eb9bc.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <header>
+        <div id="top-header" class="bg-gray-800">
+            <div class="container md:flex mx-auto md:justify-between p-2 text-white content-start pb-3">
+                    <ul class="header-links-left">
+                        <li class="inline-block mr-3"><i class="fas fa-phone-alt mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500 md:text-sm">+021-95-51-84</a></li>
+                        <li class="inline-block mr-3"><i class="fas fa-paper-plane mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500 md:text-sm">email@email.com</a></li>
+                        <li class="inline-block"><i class="fas fa-map-marker-alt mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500 md:text-sm">1734 Stonecoal Road</a></li>
+                    </ul>
+                    <ul class="header-links-right ">
+                        <li class="inline-block mr-3"><i class="fas fa-dollar-sign mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500">USD</a></li>
+                        <li class="inline-block"><i class="fas fa-user mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500">My Account</a></li>
+                    </ul>
+            </div>
+        </div><!-- top-header -->
+
+        <div id="header" class="bg-gray-900">
+            <div class="container mx-auto flex flex-wrap py-3">
+                <div class="w-full lg:w-3/12"> 
+                    <img src="img/logo/jd-rivero.png" alt="jd-rivero-global" class="pl-2 h-20 lg:h-16 lg:h-20 xl:h-20 mx-auto lg:ml-0"> 
+                </div>
+                <div class="search-here  w-full lg:w-6/12 inline text-center pt-5">
+                    <div class="relative flex justify-center">
+                        <select class="block w-40 appearance-none rounded-l-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-shortin">
+                            <option value="">Sorting 1</option>
+                            <option value="">Sorting 2</option>
+                        </select>
+                        <div class="pointer-events-none -ml-8 inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                        <input type="text" name="" id="" class="placeholder-orange-400 focus:outline-none p-2 pb-3 -ml-1 md:px-5 w-16 sm:w-auto lg:w-64" placeholder="Search here">
+                        <button type="button" class="bg-orange-500 appearance-none hover:bg-orange-400 focus:outline-none rounded-r-full text-white font-bold p-2 px-6 pb-3 -ml-1">Search</button>
+                    </div>
+                </div><!-- search-here -->
+                <div class="you-cart w-full lg:w-3/12 flex justify-end">
+                    <div class="text-center">
+                        <a href="#" class="block w-24 pt-4 text-white">
+                            <i class="far fa-heart block w-20"></i>
+                            <span class="text-sm">Your Wishlist</span>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="block w-24 pt-4 text-white">
+                            <i class="fas fa-shopping-cart block w-20"></i>
+                            <span class="text-sm">Your Cart</span>
+                        </a>
+                        <div class="absolute bg-orange-500 rounded-full h-4 w-4 flex items-center justify-center -mt-12 ml-12 text-xs text-white font-bold">
+                            3
+                        </div>
+                    </div>
+                    <div class="menu-movil text-center block lg:hidden">
+                        <!-- <div class="border-solid border-4 border-gray-600">ssss</div> -->
+                        <div class="border-solid border-white w-20">
+                            <a href="#" class="btn-nav-menu block w-24 pt-4 text-white">
+                                <div class="btn-nav-menu-open block">
+                                    <i class="fas fa-bars  w-20"></i>
+                                </div>
+                                <div class="btn-nav-menu-close hidden">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <span>Menu</span>
+                            </a>
+                            
+                        </div>
+                    </div><!--menu-movil-->
+                </div><!-- you-cart -->
+                <div id="responsive-nav" class="nav-movil bg-gray-900">
+                    <div class="">
+                        <a href="index.html" class="py-3 px-3 py-2 mt-6  block font-semibold text-orange-500 border-b-2 border-orange-500 hover:bg-gray-800">Home</a>
+                        <a href="#" class="py-3 px-3 py-2 block text-white font-bold hover:bg-gray-800">Categories</a>
+                        <a href="#" class="py-3 px-3 py-2 block text-white font-bold hover:bg-gray-800">Contact Us</a>
+                    </div>
+                </div>
+            </div> <!--containner-->
+            
+        </div><!-- #header -->
+        
+    </header>
+    <nav id="navigation" class="invisible lg:visible">
+        <div class="border-2 border-t-2 border-orange-500"></div>
+        <div class="container mx-auto">
+            <div class="py-3 px-2 flex ">
+                <a href="index.html" class="mr-6 text-gray-800 font-bold hover:underline hover:text-orange-500">Home</a>
+                <a href="#" class="mr-6 text-gray-800 font-bold hover:underline hover:text-orange-500">Categories</a>
+                <a href="#" class="mr-6 text-gray-800 font-bold hover:underline hover:text-orange-500">Contact Us</a>
+            </div>
+        </div>
+        <div class=" border-b-2 border-gray-300"></div>
+    </nav>
+    <section class="my-8">
+        <div class="container mx-auto flex flex-wrap justify-between">
+            <div id="col1" class="w-full md:w-1/3 lg:w-1/5 sm:px-16 md:px-2 mb-6">
+                <div class="sidebar-categories ">
+                    <div class="head bg-orange-500 text-4xl font-bold text-white pt-3 pb-3 md:text-2xl lg:text-lg lg:py-4 xl:text-2xl xl:py-3 px-4">         
+                        Browse Product
+                    </div>
+                    <ul class="main-categories text-sm pl-2 shadow-md">
+                        <li class="py-2 pt-8 block"><a href="#" class="text-gray-800 hover:text-orange-500">Clasic House Desing</a> <span class="text-xs ml-1 text-gray-500">(53)</span></li>
+                        <li class="py-2 block"><a href="#" class="text-gray-800 hover:text-orange-500">Model House Desing</a> <span class="text-xs ml-1 text-gray-500">(53)</span></li>
+                        <li class="py-2 block"><a href="#" class="text-gray-800 hover:text-orange-500">Comtemporari House Desing</a> <span class="text-xs ml-1 text-gray-500">(53)</span></li>
+                        <li class="py-2 block"><a href="#" class="text-gray-800 hover:text-orange-500">Farmers House Desing</a> <span class="text-xs ml-1 text-gray-500">(53)</span></li>
+                        <li class="py-2 block"><a href="#" class="text-gray-800 hover:text-orange-500">Mediterrenea House Desing</a> <span class="text-xs ml-1 text-gray-500">(53)</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-filter mt-12 mb-6">
+                    <div class="head bg-orange-500 text-4xl font-bold text-white pt-3 pb-3 md:text-2xl lg:text-lg lg:py-4 xl:text-2xl xl:py-3 px-4">         
+                        Product filters
+                    </div>
+                    <div class="px-2 shadow-md pb-4">
+                        <fieldset class="livin-area  border-b-2 border-orange-400 py-4">
+                            <!-- collapsible('livin-area')  deben generarse dinamicamente y 
+                                    contener los nombres de los input corespondientes-->
+                            <div onclick="collapsible('livin-area');filter('input-livin-area')" class="title-wrapper flex cursor-pointer justify-between text-gray-800">
+                                <h5>Living Area</h5>
+                                <i class="fas fa-chevron-down livin-area-1 text-orange-400"></i>
+                            </div>
+                            <div class="livin-area-2 inline hidden">
+                                <div>
+                                    <div class="control-wrapper flex">
+                                        <div class="input-wraper flex items-center border-orange-400 py-2">
+                                            <label aria-label="Buscar">
+                                                <!-- onkeyup="filter('input-livin-area')" y class="input-livin-area" deben generarse dinamicamente y 
+                                                    contener los nombres de los input corespondientes-->
+                                                <input type="text" name="" placeholder="Search Living Area" value="" onfocus="filter('input-livin-area')" onkeyup="filter('input-livin-area')" autocomplete="false" class="input-livin-area appearance-none block w-full text-orange-400 border border-orange-400 rounded py-2 px-4 mb-3 leading-tight focus:outline-none ">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <form action="">
+
+                                        <div id="input-livin-area" class="control-wrapper overflow-y-scroll h-32 limitedHeight ">
+                                            
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        
+                        </fieldset>
+                        <fieldset class="story  border-b-2 border-orange-400 py-4">
+                            <div onclick="collapsible('story')" class="title-wrapper flex cursor-pointer justify-between text-gray-800">
+                                <h5>Story</h5>
+                                <i class="fas fa-chevron-down story-1 text-orange-400"></i>
+                            </div>
+                            <div class="story-2 inline hidden">
+                                <div>
+                                    <div class="control-wrapper flex">
+                                        <div class="input-wraper flex items-center border-b border-b-2 border-orange-400 py-2">
+                                            <label aria-label="Buscar">
+                                                <input type="text" name="" placeholder="Search Story" onkeyup="filter('input-story')" autocomplete="false" class="input-story">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="control-wrapper limitedHeight ">
+                                        <div class="input-wrapper options md:flex md:items-center my-2">
+                                            <label class="checkbox-label md:w-2/3 block text-orange-400 font-bold">
+                                                <input type="checkbox" name="" id="" class="mr-2 leading-tight">
+                                                <span class="text-sm">1 Story</span>
+                                            </label>
+                                        </div>
+                                        <div class="input-wrapper options md:flex md:items-center my-2">
+                                            <label class="checkbox-label md:w-2/3 block text-orange-400 font-bold">
+                                                <input type="checkbox" name="" id="" class="mr-2 leading-tight">
+                                                <span class="text-sm">2 Storys</span>
+                                            </label>
+                                        </div>
+                                        <div class="input-wrapper options md:flex md:items-center my-2">
+                                            <label class="checkbox-label md:w-2/3 block text-orange-400 font-bold">
+                                                <input type="checkbox" name="" id="" class="mr-2 leading-tight">
+                                                <span class="text-sm">3 Storys</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <!-- product -->
+            <div id="col2" class="w-full md:w-2/3 lg:w-4/5 xl:w-4/5 flex flex-wrap sm:px-16 md:px-16 lg:px-0 xl:px-0 content-start">
+                <!-- imagen de producto, titulos y descripcion principal-->
+                <section class="flex flex-wrap w-full">
+                    <div class="border-2 border-orange-500 w-full lg:w-2/4 xl:w-2/4">
+                        <div class="description">
+                            <div >
+                                <img class="w-full" src="img/products/orquidea-font-elevation-f.jpg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-2 border-orange-500 w-full lg:w-2/4 xl:w-2/4 pl-5">
+                        <div>
+                            <ul>
+                                <li><span class="title text-3xl text-gray-800 font-bold">Apure House</span></li>
+                                <li><span class="type text-lg font-bold text-gray-800">Construction plans for New House </span></li>
+                                <li><span class="model text-lg font-bold text-gray-800">Model: Clasic House Desing </span></li>
+                                <li><span class="price text-2xl text-gray-800">From: $1950,00</span></li>
+                            </ul>
+                        </div>
+                        <div class="flex content-start pt-4 justify-between pr-5 lg:pr-24 xl:pr-24 text-gray-800">
+                            <div class="text-center"><i class="fab fa-accusoft fa-3x"></i><br><span>1540 FT</span></div>
+                            <div class="text-center"><i class="fas fa-bed fa-3x"></i><br> <span>Bed</span></div>
+                            <div class="text-center"><i class="fas fa-bath fa-3x"></i><br> <span>Bath</span></div>
+                            <div class="text-center"><i class="fas fa-car fa-3x"></i><br><span>Car</span></div>
+                            <div class="text-center"><i class="fas fa-home fa-3x"></i><br><span>W 60'</span> <br><span>D 50'</span></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- espesificaciones y formulario del producto -->
+                <section class="flex flex-wrap w-full">
+                    <div class="desciption border-2 border-orange-500 w-full lg:w-2/4 xl:w-2/4">
+                        descripcion
+                    </div>
+                    <div class="form border-2 border-orange-500 w-full lg:w-2/4 xl:w-2/4 pl-5 pt-5">
+                        <form class="w-full max-w-sm">
+                            <form class="w-full max-w-sm">
+                                <div class="md:flex md:items-center mb-6">
+                                    <div class="md:w-1/3">
+                                        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+                                            Option
+                                        </label>
+                                    </div>
+                                    <div class="md:w-2/3 inline-block relative">
+                                        <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                          </select>
+                                          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="md:flex md:items-center mb-6">
+                                    <div class="md:w-1/3">
+                                        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-username">
+                                            Option
+                                        </label>
+                                    </div>
+                                <div class="md:w-2/3 inline-block relative">
+                                    <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                      </select>
+                                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                      </div>
+                                </div>
+                                </div>
+                                
+                                <div class="md:flex md:items-center">
+                                    <div class="md:w-1/3"></div>
+                                    <div class="md:w-2/3">
+                                        <button class="shadow bg-orange-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                                        ADD TO CART
+                                        </button>
+                                    </div>
+                                </div>
+                              </form> 
+                        </form>
+                    </div>
+                </section>
+                <section class="set-sample-plan pt-5">
+                    <div class="btn text-center">
+                        <button class="shadow bg-orange-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                            See a sample plan set
+                        </button>
+                    </div>
+                    <div class="shor-description px-5 lg:px-24 xl:px-24 text-center pt-5">
+                        <span>
+                            Estos planos fueron contruidos por nuestro grupo de disenadores con mucho amor de nuestra familia a la tuya, apreciamos alguna sugerencia o comentario que tengas para nosotros, tambien te podemos ayudar a disenar la casa de tus suenos. Contactanos (info) . Enriquecemos tu vida. 
+                        </span>
+                    </div>
+                </section> 
+ 
+            
+            </div>
+        </div>
+    </section>
+    <footer class="border-t-4 border-orange-500">
+        <div class="section bg-gray-900">
+            <div class="container mx-auto py-10 px-5">
+                <div class="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 text-white">
+                    <div class="mb-10 lg:mb-0 xl:mb-0">
+                        <div class="footer-title text-2xl font-bold mb-6">
+                            Service
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">My Account</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">View Cart</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Wishlist</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-10 lg:mb-0 xl:mb-0" >
+                        <div class="footer-title text-2xl font-bold mb-6">
+                            Categories
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Clasic House Desing</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Model House Desing</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Comtemporari House Desing</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Farmers House Desing</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Mediterrenea House Desing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-title text-2xl font-bold mb-6">
+                            Legal
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Join Us</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Privacy & Policy</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-title text-2xl font-bold mb-6">
+                            Have a Questions?
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li class=" py-2"><i class="fas fa-phone-alt mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500 md:text-sm">+021-95-51-84</a></li>
+                                <li class=" py-2"><i class="fas fa-paper-plane mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500 md:text-sm">email@email.com</a></li>
+                                <li class=" py-2"><i class="fas fa-map-marker-alt mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500 md:text-sm">1734 Stonecoal Road</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section bg-gray-800">
+            <div class="container mx-auto">
+                <div class=" text-center text-white py-16 text-sm">
+                    Copyright © 2020 JD Rivero Shop. All Rights Reserved. | Designed by Rivero Visual Group
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/fontawes.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
