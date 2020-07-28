@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - JD Rivero </title>
+    <link rel="stylesheet" href="css/app.css">
+    <!-- <script src="https://kit.fontawesome.com/bfc59eb9bc.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <header>
+        <div id="top-header" class="bg-gray-800">
+            <div class="container md:flex mx-auto md:justify-between p-2 text-white content-start pb-3">
+                    <ul class="header-links-left">
+                        <li class="inline-block mr-3"><i class="fas fa-phone-alt mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500 md:text-sm">+021-95-51-84</a></li>
+                        <li class="inline-block mr-3"><i class="fas fa-paper-plane mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500 md:text-sm">email@email.com</a></li>
+                        <li class="inline-block"><i class="fas fa-map-marker-alt mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500 md:text-sm">1734 Stonecoal Road</a></li>
+                    </ul>
+                    <ul class="header-links-right ">
+                        <li class="inline-block mr-3"><i class="fas fa-dollar-sign mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500">USD</a></li>
+                        <li class="inline-block"><i class="fas fa-user mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500">My Account</a></li>
+                    </ul>
+            </div>
+        </div><!-- top-header -->
+
+        <div id="header" class="bg-gray-900">
+            <div class="container mx-auto flex flex-wrap py-3">
+                <div class="w-full lg:w-3/12"> 
+                    <img src="img/logo/jd-rivero.png" alt="jd-rivero-global" class="pl-2 h-20 lg:h-16 lg:h-20 xl:h-20 mx-auto lg:ml-0"> 
+                </div>
+                <div class="search-here  w-full lg:w-6/12 inline text-center pt-5">
+                    <div class="relative flex justify-center">
+                        <select class="block w-40 appearance-none rounded-l-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-shortin">
+                            <option value="">Sorting 1</option>
+                            <option value="">Sorting 2</option>
+                        </select>
+                        <div class="pointer-events-none -ml-8 inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                        <input type="text" name="" id="" class="placeholder-orange-400 focus:outline-none p-2 pb-3 -ml-1 md:px-5 w-16 sm:w-auto lg:w-64" placeholder="Search here">
+                        <button type="button" class="bg-orange-500 appearance-none hover:bg-orange-400 focus:outline-none rounded-r-full text-white font-bold p-2 px-6 pb-3 -ml-1">Search</button>
+                    </div>
+                </div><!-- search-here -->
+                <div class="you-cart w-full lg:w-3/12 flex justify-end">
+                    <div class="text-center">
+                        <a href="#" class="block w-24 pt-4 text-white">
+                            <i class="far fa-heart block w-20"></i>
+                            <span class="text-sm">Your Wishlist</span>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="block w-24 pt-4 text-white">
+                            <i class="fas fa-shopping-cart block w-20"></i>
+                            <span class="text-sm">Your Cart</span>
+                        </a>
+                        <div class="absolute bg-orange-500 rounded-full h-4 w-4 flex items-center justify-center -mt-12 ml-12 text-xs text-white font-bold">
+                            3
+                        </div>
+                    </div>
+                    <div class="menu-movil text-center block lg:hidden">
+                        <!-- <div class="border-solid border-4 border-gray-600">ssss</div> -->
+                        <div class="border-solid border-white w-20">
+                            <a href="#" class="btn-nav-menu block w-24 pt-4 text-white">
+                                <div class="btn-nav-menu-open block">
+                                    <i class="fas fa-bars  w-20"></i>
+                                </div>
+                                <div class="btn-nav-menu-close hidden">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <span>Menu</span>
+                            </a>
+                            
+                        </div>
+                    </div><!--menu-movil-->
+                </div><!-- you-cart -->
+                <div id="responsive-nav" class="nav-movil bg-gray-900">
+                    <div class="">
+                        <a href="index.html" class="py-3 px-3 py-2 mt-6  block font-semibold text-orange-500 border-b-2 border-orange-500 hover:bg-gray-800">Home</a>
+                        <a href="#" class="py-3 px-3 py-2 block text-white font-bold hover:bg-gray-800">Categories</a>
+                        <a href="#" class="py-3 px-3 py-2 block text-white font-bold hover:bg-gray-800">Contact Us</a>
+                    </div>
+                </div>
+            </div> <!--containner-->
+            
+        </div><!-- #header -->
+        
+    </header>
+    <nav id="navigation" class="invisible lg:visible">
+        <div class="border-2 border-t-2 border-orange-500"></div>
+        <div class="container mx-auto">
+            <div class="py-3 px-2 flex ">
+                <a href="index.html" class="mr-6 text-gray-800 font-bold hover:underline hover:text-orange-500">Home</a>
+                <a href="categories.html" class="mr-6 text-gray-800 font-bold hover:underline hover:text-orange-500">Categories</a>
+                <a href="#" class="mr-6 text-gray-800 font-bold hover:underline hover:text-orange-500">Contact Us</a>
+            </div>
+        </div>
+        <div class=" border-b-2 border-gray-300"></div>
+    </nav>
+    <section class="my-8">
+        <div class="container mx-auto 2 lg:px-32 xl:px-32">
+            <div class="title-shopping">
+                <h1 class="text-3xl text-gray-800 font-bold">
+                    Shopping Cart
+                </h1>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <section class="my-8">
+        <div class="container mx-auto px-4 lg:px-32 xl:px-32 mt-4">
+            <div class="shadow-md flex flex-wrap border md:py-2">
+                <div class="title-image w-full bg-orange-500 md:bg-white lg:bg-white xl:bg-white md:w-1/12 lg:w-1/12 xl:w-1/12 text-center pt-4">
+                    <a href="#" class="">
+                        <i class="fas fa-times fa-2x text-white md:text-orange-500 lg:text-orange-500 xl:text-orange-500 hover:text-orange-400"></i>
+                    </a>
+                </div>
+                <div class="title-image w-full mt-4 md:mt-0 md:w-1/6 lg:w-1/6 xl:w-1/6 px-2 md:px-4">
+                    <img src="img/products/medanito-house-front-elevation-f.jpg" alt="" srcset="" class="w-48 md:w-full">
+                </div>
+                <div class="title-name w-full md:w-1/5 px-2 md:px-0">
+                    <span class="text-gray-500 inline-block md:block mr-10 md:mr-0">Name</span>
+                    <p class="text-gray-800 font-semibold text-lg pt-2 inline-block md:block">Los Roque House</p>
+                    <p class="text-gray-800 font-medium text-sm inline-block md:block">(Clasic House Desing) </p>
+                </div>
+                <div class="title-product w-full md:w-1/5 px-2 md:px-0">
+                    <span class="text-gray-500 inline-block md:block mr-6 md:mr-0">Product</span>
+                    <p class="text-gray-800 font-medium text-sm pt-3 inline-block md:block">Construction plans for New House</p>
+                </div>
+                <div class="title-qty w-full md:w-1/6 md:text-center px-2 md:px-0">
+                    <span class="text-gray-500 inline-block md:block mr-5 md:mr-0">Quantity</span>
+                    <p class="text-gray-800 font-semibold text-xl pt-3 inline-block md:block">1</p>
+                </div>
+                <div class="title-price w-full md:w-1/6 md:text-center px-2 md:px-0">
+                    <span class="text-gray-500 inline-block md:block mr-10 md:mr-0">Price</span>
+                    <p class="text-gray-800 font-semibold text-xl pt-3 inline-block md:block">$ 1,850.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 lg:px-32 xl:px-32 mt-4">
+            <div class="shadow-md flex flex-wrap border md:py-2">
+                <div class="title-image w-full bg-orange-500 md:bg-white lg:bg-white xl:bg-white md:w-1/12 lg:w-1/12 xl:w-1/12 text-center pt-4">
+                    <a href="#" class="">
+                        <i class="fas fa-times fa-2x text-white md:text-orange-500 lg:text-orange-500 xl:text-orange-500 hover:text-orange-400"></i>
+                    </a>
+                </div>
+                <div class="title-image w-full mt-4 md:mt-0 md:w-1/6 lg:w-1/6 xl:w-1/6 px-2 md:px-4">
+                    <img src="img/products/medanito-house-front-elevation-f.jpg" alt="" srcset="" class="w-48 md:w-full">
+                </div>
+                <div class="title-name w-full md:w-1/5 px-2 md:px-0">
+                    <span class="text-gray-500 inline-block md:block mr-10 md:mr-0">Name</span>
+                    <p class="text-gray-800 font-semibold text-lg pt-2 inline-block md:block">Los Roque House</p>
+                    <p class="text-gray-800 font-medium text-sm inline-block md:block">(Clasic House Desing) </p>
+                </div>
+                <div class="title-product w-full md:w-1/5 px-2 md:px-0">
+                    <span class="text-gray-500 inline-block md:block mr-6 md:mr-0">Product</span>
+                    <p class="text-gray-800 font-medium text-sm pt-3 inline-block md:block">Construction plans for New House</p>
+                </div>
+                <div class="title-qty w-full md:w-1/6 md:text-center px-2 md:px-0">
+                    <span class="text-gray-500 inline-block md:block mr-5 md:mr-0">Quantity</span>
+                    <p class="text-gray-800 font-semibold text-xl pt-3 inline-block md:block">1</p>
+                </div>
+                <div class="title-price w-full md:w-1/6 md:text-center px-2 md:px-0">
+                    <span class="text-gray-500 inline-block md:block mr-10 md:mr-0">Price</span>
+                    <p class="text-gray-800 font-semibold text-xl pt-3 inline-block md:block">$ 1,850.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 lg:px-32 xl:px-32 mt-12 ">
+            <div class="shadow-md flex flex-wrap pr-0 md:pr-12 mb-12 border">
+                <div class="title-price w-full text-left md:text-right px-2 md:px-0 pb-3">
+                    <span class="text-gray-800 text-xl font-bold inline-block mr-2 ">Order Total: </span>
+                    <p class="text-gray-800 text-xl font-bold pt-3 inline-block">$ 1,850.00</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        
+    </section>
+    <section class="my-8">
+        <div class="container mx-auto 2 lg:px-32 xl:px-32">
+            <div class="btn-shopping text-right">
+                <a class="bg-orange-500 hover:bg-transparent text-white font-semibold uppercase hover:text-orange-500 py-2 px-4 border border-transparent hover:border-orange-500 cursor-pointer rounded">
+                    Proceed to checkout
+                  </a>
+            </div>
+        </div>
+    </section>
+    <footer class="border-t-4 border-orange-500">
+        <div class="section bg-gray-900">
+            <div class="container mx-auto py-10 px-5">
+                <div class="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 text-white">
+                    <div class="mb-10 lg:mb-0 xl:mb-0">
+                        <div class="footer-title text-2xl font-bold mb-6">
+                            Service
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">My Account</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">View Cart</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Wishlist</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-10 lg:mb-0 xl:mb-0" >
+                        <div class="footer-title text-2xl font-bold mb-6">
+                            Categories
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Clasic House Desing</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Model House Desing</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Comtemporari House Desing</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Farmers House Desing</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Mediterrenea House Desing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-title text-2xl font-bold mb-6">
+                            Legal
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Join Us</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Privacy & Policy</a></li>
+                                <li class=" py-2"><a href="#" class="hover:text-orange-500 md:text-sm">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-title text-2xl font-bold mb-6">
+                            Have a Questions?
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li class=" py-2"><i class="fas fa-phone-alt mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500 md:text-sm">+021-95-51-84</a></li>
+                                <li class=" py-2"><i class="fas fa-paper-plane mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500 md:text-sm">email@email.com</a></li>
+                                <li class=" py-2"><i class="fas fa-map-marker-alt mr-1 text-orange-500 md:text-sm"></i><a href="#" class="hover:text-orange-500 md:text-sm">1734 Stonecoal Road</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section bg-gray-800">
+            <div class="container mx-auto">
+                <div class=" text-center text-white py-16 text-sm">
+                    Copyright © 2020 JD Rivero Shop. All Rights Reserved. | Designed by Rivero Visual Group
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/fontawes.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
