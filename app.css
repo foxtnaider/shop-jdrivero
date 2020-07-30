@@ -11,6 +11,59 @@ a{
 li{
     transition: all 0.3s ease-in-out;  
 }
+button{
+    transition: all 0.3s ease-in-out;
+}
+
+/* slider */
+.container-slider {
+    margin: auto;
+  }
+  ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+  }
+  ul.slider li img{
+    width: 100%;
+    
+    object-fit: cover;
+  }
+  ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+  }
+  /*
+  ul.slider li:target {
+    opacity: 1; Mostramos el <li> del enlace que pulsemos
+  }*/
+  .opacitys{
+    opacity: 1 !important;
+  }
+  .menu-slider{
+    text-align: center;
+    
+  }
+  .menu-slider li{
+    display: inline-block;
+    text-align: center;
+  }
+  .menu-slider li a{
+    
+    display: inline-block;
+    /* color: white; */
+    text-decoration: none;
+    background-color: white;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    border-radius: 100%;
+  }
 
 /* clases para menu mobile responsive */
 #responsive-nav {
